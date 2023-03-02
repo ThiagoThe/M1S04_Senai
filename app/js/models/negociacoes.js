@@ -1,13 +1,17 @@
-class negociacao {
+export class Negociacao {
+  #data;
+  #quantidade;
+  #valor;
+
   constructor(data, quantidade, valor) {
-    this.data = Date(data.getTime()); //Faz uma cópia da data
-    this.quantidade = quantidade;
-    this.valor = valor;
+    this.#data = Date;
+    this.#quantidade = quantidade;
+    this.#valor = valor;
   }
 
   //Getters
   get data() {
-    return new Date(this.data.getTime()); //Retorna uma cópia da data
+    return new Date();
   }
 
   get quantidade() {
