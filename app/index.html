@@ -7,30 +7,21 @@
     <title>B3 - Negociações</title>
   </head>
   <body>
-    <form action="">
+    <form class="form" id="form">
       <label for="data"
-        >Data da negociação: <input type="date" name="data" id="data"
+        >Data da negociação: <input type="date" id="data"
       /></label>
       <br /><br />
       <label for="quantidade"
         >Quantidade de ações vendidas:
-        <input
-          type="number"
-          min="1"
-          max="100"
-          nome="quantidade"
-          id="quantidade" /></label
+        <input type="number" min="1" max="100" id="quantidade" /></label
       ><br /><br />
       <label for="valor"
         >Valor da negociação:
-        <input
-          type="number"
-          nome="valor"
-          id="valor"
-          min="0.0"
-          max="1000000.0" /></label
+        <input type="number" id="valor" min="0.0" max="1000000.0" /></label
       ><br /><br />
-      <button type="submit" value="Cadastrar">Cadastrar</button>
+      <button type="submit">Cadastrar</button>
     </form>
+    <script type="models" src="./js/main/app.js"></script>
   </body>
 </html>
